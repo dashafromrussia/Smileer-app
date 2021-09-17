@@ -15,7 +15,7 @@ useEffect(()=>{
        <YoutubePlayer
          height={300}
          play={true}
-         videoId={data.data[0].video.substring(data.data[0].video.indexOf('=')+1, data.data[0].video.length)}
+         videoId={data.data[0].video.substring(data.data[0].video.length-11,data.data[0].video.length)}
        />
      </View>
     )
